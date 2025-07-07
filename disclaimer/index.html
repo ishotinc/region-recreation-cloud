@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>免責事項 | 地域No.1クラウド</title>
+<style>
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Pro Display', system-ui, sans-serif;
+      line-height: 1.6;
+      color: #1d1d1f;
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
+  .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 22px;
+  }
+
+  /* ヘッダー */
+  .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 22px;
+      max-width: 1120px;
+      margin: 0 auto;
+  }
+
+  .logo {
+      font-size: 21px;
+      font-weight: 600;
+      color: #1d1d1f;
+      letter-spacing: -0.022em;
+      text-decoration: none;
+  }
+
+  /* メインコンテンツ */
+  .main-content {
+      padding: 120px 0 80px;
+      min-height: calc(100vh - 200px);
+  }
+
+  .page-title {
+      font-size: clamp(32px, 6vw, 56px);
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #1d1d1f;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      text-align: center;
+  }
+
+  .content-section {
+      background: #f5f5f7;
+      border-radius: 18px;
+      padding: 40px;
+      margin-bottom: 24px;
+  }
+
+  .section-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1d1d1f;
+      margin-bottom: 20px;
+      letter-spacing: -0.022em;
+  }
+
+  .content-text {
+      font-size: 17px;
+      color: #1d1d1f;
+      line-height: 1.8;
+      margin-bottom: 20px;
+  }
+
+  .content-text:last-child {
+      margin-bottom: 0;
+  }
+
+  .content-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+  }
+
+  .content-list li {
+      font-size: 17px;
+      color: #1d1d1f;
+      line-height: 1.8;
+      margin-bottom: 12px;
+      padding-left: 24px;
+      position: relative;
+  }
+
+  .content-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #007AFF;
+      font-weight: bold;
+  }
+
+  /* フッター */
+  .footer {
+      background: #f5f5f7;
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid #d2d2d7;
+  }
+
+  .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+  }
+
+  .footer-link {
+      color: #86868b;
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.3s ease;
+  }
+
+  .footer-link:hover {
+      color: #1d1d1f;
+  }
+
+  .footer-copyright {
+      color: #86868b;
+      font-size: 13px;
+  }
+
+  /* レスポンシブ */
+  @media (max-width: 768px) {
+      .container {
+          padding: 0 16px;
+      }
+
+      .nav {
+          padding: 12px 16px;
+      }
+
+      .main-content {
+          padding: 100px 0 60px;
+      }
+
+      .content-section {
+          padding: 24px;
+      }
+
+      .section-title {
+          font-size: 20px;
+      }
+
+      .content-text,
+      .content-list li {
+          font-size: 15px;
+      }
+  }
+</style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="header">
+  <nav class="nav">
+      <a href="../" class="logo">地域No.1クラウド</a>
+  </nav>
+</header>
+
+<!-- メインコンテンツ -->
+<main class="main-content">
+  <div class="container">
+      <h1 class="page-title">免責事項</h1>
+      
+      <div class="content-section">
+          <h2 class="section-title">1. サービスの利用について</h2>
+          <p class="content-text">
+              地域No.1クラウド（以下、「本サービス」といいます）のご利用にあたっては、利用者ご自身の責任においてご利用いただくものとします。
+          </p>
+          <p class="content-text">
+              本サービスで提供される情報やコンテンツは、あくまで参考情報として提供されるものであり、その正確性、完全性、有用性等について、当社は一切の責任を負いません。
+          </p>
+      </div>
+
+      <div class="content-section">
+          <h2 class="section-title">2. 分析結果・生成コンテンツについて</h2>
+          <p class="content-text">
+              本サービスが提供する競合分析結果や自動生成されるコンテンツは、AIによる分析・生成結果であり、以下の点にご注意ください。
+          </p>
+          <ul class="content-list">
+              <li>分析結果は参考情報であり、事業上の意思決定は利用者の責任で行ってください</li>
+              <li>生成されたコンテンツは必ず利用者にて内容を確認・編集の上でご利用ください</li>
+              <li>競合情報は公開情報を基にしており、最新性・正確性を保証するものではありません</li>
+              <li>生成コンテンツの利用により生じた結果について、当社は責任を負いません</li>
+          </ul>
+      </div>
+
+      <div class="content-section">
+          <h2 class="section-title">3. 損害賠償責任の制限</h2>
+          <p class="content-text">
+              本サービスの利用により利用者に生じた損害について、当社の故意または重過失による場合を除き、当社は一切の責任を負いません。
+          </p>
+          <p class="content-text">
+              また、当社が責任を負う場合であっても、当社の責任は、利用者が当社に支払った直近1ヶ月分の利用料金を上限とします。
+          </p>
+      </div>
+
+      <div class="content-section">
+          <h2 class="section-title">4. 第三者との紛争</h2>
+          <p class="content-text">
+              本サービスの利用に関連して、利用者と第三者との間で紛争が生じた場合、利用者は自己の責任と費用において解決するものとし、当社は一切の責任を負いません。
+          </p>
+      </div>
+
+      <div class="content-section">
+          <h2 class="section-title">5. サービスの中断・停止</h2>
+          <p class="content-text">
+              当社は、以下の場合、利用者への事前通知なく本サービスの提供を中断または停止することがあります。
+          </p>
+          <ul class="content-list">
+              <li>システムの保守・点検を行う場合</li>
+              <li>天災・事故等の不可抗力により提供が困難な場合</li>
+              <li>その他、当社が必要と判断した場合</li>
+          </ul>
+          <p class="content-text">
+              これらによって利用者に生じた損害について、当社は責任を負いません。
+          </p>
+      </div>
+
+      <div class="content-section">
+          <h2 class="section-title">6. 免責事項の変更</h2>
+          <p class="content-text">
+              当社は、必要に応じて本免責事項を変更することがあります。変更後の免責事項は、本サービス上に掲載した時点から効力を生じるものとします。
+          </p>
+      </div>
+
+      <div class="content-section">
+          <p class="content-text">
+              <strong>最終更新日：2025年7月4日</strong>
+          </p>
+      </div>
+  </div>
+</main>
+
+<!-- フッター -->
+<footer class="footer">
+  <div class="container">
+      <div class="footer-links">
+          <a href="../terms/" class="footer-link">利用規約</a>
+          <a href="../privacy-policy/" class="footer-link">プライバシーポリシー</a>
+          <a href="../commercial-transaction-act/" class="footer-link">特定商取引法に基づく表記</a>
+          <a href="../disclaimer/" class="footer-link">免責事項</a>
+      </div>
+      <p class="footer-copyright">© 2025 株式会社i-SHOT. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

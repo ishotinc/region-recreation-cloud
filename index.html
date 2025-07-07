@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T9QPJ4SL');</script>
+    <!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>地域No.1クラウド | AI駆動美容クリニック戦略システム</title>
+<style>
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Pro Display', system-ui, sans-serif;
+      line-height: 1.6;
+      color: #1d1d1f;
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
+  .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 22px;
+  }
+
+  /* ヘッダー */
+  .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 22px;
+      max-width: 1120px;
+      margin: 0 auto;
+  }
+
+  .logo {
+      font-size: 21px;
+      font-weight: 600;
+      color: #1d1d1f;
+      letter-spacing: -0.022em;
+  }
+
+  /* ヒーローセクション */
+  .hero {
+      padding: 120px 0 80px;
+      text-align: center;
+      background: #ffffff;
+  }
+
+  .hero-badge {
+      display: inline-block;
+      background: #007AFF;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 24px;
+      letter-spacing: 0.011em;
+  }
+
+  .hero h1 {
+      font-size: clamp(48px, 8vw, 96px);
+      font-weight: 600;
+      line-height: 1.05;
+      margin-bottom: 16px;
+      color: #1d1d1f;
+      letter-spacing: -0.025em;
+  }
+
+  .hero-subtitle {
+      font-size: clamp(28px, 5vw, 40px);
+      margin-bottom: 20px;
+      color: #1d1d1f;
+      font-weight: 600;
+      letter-spacing: -0.022em;
+      line-height: 1.1;
+  }
+
+  .hero-description {
+      font-size: 21px;
+      margin-bottom: 40px;
+      color: #86868b;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.4;
+      font-weight: 400;
+  }
+
+  .hero-ctas {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+  }
+
+  .cta-primary {
+      background: #007AFF;
+      color: white;
+      padding: 16px 32px;
+      font-size: 19px;
+      font-weight: 400;
+      text-decoration: none;
+      border-radius: 24px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      min-width: 200px;
+  }
+
+  .cta-primary:hover {
+      background: #0056b3;
+      transform: scale(1.02);
+  }
+
+  .hero-visual {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #f5f5f7;
+      border-radius: 18px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* セクション共通 */
+  .section {
+      padding: 80px 0;
+  }
+
+  .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+  }
+
+  .section-title {
+      font-size: clamp(32px, 6vw, 56px);
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #1d1d1f;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+  }
+
+  .section-subtitle {
+      font-size: 21px;
+      color: #86868b;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.4;
+      font-weight: 400;
+  }
+
+  /* 機能セクション */
+  .features {
+      background: #f5f5f7;
+  }
+
+  .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 60px;
+  }
+
+  .feature-card {
+      background: white;
+      border-radius: 18px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+  }
+
+  .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 24px;
+      background: #007AFF;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+  }
+
+  .feature-card h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #1d1d1f;
+      letter-spacing: -0.022em;
+  }
+
+  .feature-card p {
+      color: #86868b;
+      line-height: 1.5;
+      font-size: 17px;
+  }
+
+  /* デモセクション */
+  .demo-section {
+      background: white;
+  }
+
+  .demo-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-top: 60px;
+  }
+
+  .demo-content h2 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #1d1d1f;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+  }
+
+  .demo-content p {
+      font-size: 19px;
+      color: #86868b;
+      margin-bottom: 24px;
+      line-height: 1.5;
+  }
+
+  .feature-list {
+      list-style: none;
+      margin-bottom: 32px;
+  }
+
+  .feature-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      color: #1d1d1f;
+      font-size: 17px;
+      font-weight: 400;
+  }
+
+  .feature-list li::before {
+      content: '✓';
+      color: #30d158;
+      font-weight: 600;
+      margin-right: 12px;
+      font-size: 18px;
+  }
+
+  .demo-visual {
+      background: #f5f5f7;
+      border-radius: 18px;
+      padding: 32px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .screen-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #d2d2d7;
+  }
+
+  .screen-dots {
+      display: flex;
+      gap: 6px;
+      margin-right: 12px;
+  }
+
+  .screen-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+  }
+
+  .dot-red { background: #ff3b30; }
+  .dot-yellow { background: #ff9500; }
+  .dot-green { background: #30d158; }
+
+  .screen-title {
+      color: #86868b;
+      font-size: 15px;
+      font-weight: 400;
+  }
+
+  .screen-content {
+      background: #1d1d1f;
+      border-radius: 12px;
+      padding: 24px;
+      font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+      font-size: 13px;
+      color: #ffffff;
+      line-height: 1.6;
+      overflow-x: auto;
+      white-space: pre-wrap;
+  }
+
+  /* フローコンテナ */
+  .flow-container {
+      padding: 24px;
+      background: #1d1d1f;
+      border-radius: 12px;
+      max-height: 400px;
+      overflow-y: auto;
+  }
+
+  .flow-step {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+      opacity: 0.6;
+      transition: all 0.3s ease;
+  }
+
+  .flow-step.completed {
+      opacity: 1;
+  }
+
+  .flow-step.active {
+      opacity: 1;
+      background: rgba(0, 122, 255, 0.1);
+      border-radius: 12px;
+      padding: 16px;
+      border: 1px solid rgba(0, 122, 255, 0.3);
+  }
+
+  .step-time {
+      font-size: 14px;
+      color: #007AFF;
+      font-weight: 600;
+      margin-bottom: 8px;
+  }
+
+  .step-content {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .step-title {
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 600;
+      margin-bottom: 8px;
+  }
+
+  .step-detail {
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 1.4;
+  }
+
+  .step-arrow {
+      text-align: center;
+      font-size: 20px;
+      color: #007AFF;
+      margin: 12px 0;
+      font-weight: bold;
+  }
+
+  .content-grid {
+      display: grid;
+      gap: 12px;
+      margin-top: 12px;
+  }
+
+  .content-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .content-icon {
+      font-size: 16px;
+      flex-shrink: 0;
+  }
+
+  .content-text {
+      font-size: 13px;
+      color: #ffffff;
+      line-height: 1.4;
+  }
+
+  .content-text strong {
+      color: #ffffff;
+  }
+
+  /* フォームセクション */
+  .form-section {
+      background: white;
+      padding: 80px 0;
+  }
+
+  .form-container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 18px;
+      padding: 60px 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .form-group {
+      margin-bottom: 30px;
+  }
+
+  .form-group label {
+      display: block;
+      font-size: 19px;
+      font-weight: 600;
+      color: #1d1d1f;
+      margin-bottom: 12px;
+      letter-spacing: -0.022em;
+  }
+
+  .badge {
+      background: #ff3b30;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      margin-left: 8px;
+  }
+
+  .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #d2d2d7;
+      border-radius: 8px;
+      background: white;
+      font-size: 17px;
+      color: #1d1d1f;
+      transition: all 0.3s ease;
+  }
+
+  .form-control:focus {
+      outline: none;
+      border-color: #007AFF;
+      box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+  }
+
+  .btn {
+      background: #007AFF;
+      color: white;
+      padding: 16px 32px;
+      border: none;
+      border-radius: 22px;
+      font-size: 19px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      margin-top: 20px;
+  }
+
+  .btn:hover {
+      background: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 122, 255, 0.4);
+  }
+
+  /* レスポンシブ */
+  @media (max-width: 1024px) {
+      .features-grid, .demo-container {
+          grid-template-columns: 1fr;
+          gap: 40px;
+      }
+
+      .demo-container {
+          text-align: center;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .container {
+          padding: 0 16px;
+      }
+
+      .nav {
+          padding: 12px 16px;
+      }
+
+      .hero {
+          padding: 100px 0 60px;
+      }
+
+      .section {
+          padding: 60px 0;
+      }
+
+      .hero-ctas {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .cta-primary {
+          width: 100%;
+          max-width: 280px;
+      }
+
+      .form-container {
+          padding: 40px 20px;
+      }
+  }
+
+  /* フッター */
+  .footer {
+      background: #f5f5f7;
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid #d2d2d7;
+  }
+
+  .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+  }
+
+  .footer-link {
+      color: #86868b;
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.3s ease;
+  }
+
+  .footer-link:hover {
+      color: #1d1d1f;
+  }
+
+  .footer-copyright {
+      color: #86868b;
+      font-size: 13px;
+  }
+</style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9QPJ4SL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+<!-- ヘッダー -->
+<header class="header">
+  <nav class="nav">
+      <div class="logo">地域No.1クラウド</div>
+  </nav>
+</header>
+
+<!-- ヒーローセクション -->
+<section class="hero">
+  <div class="container">
+      <div class="hero-badge">競合分析レポート無料提供</div>
+      <h1>地域No.1クラウド</h1>
+      <p class="hero-subtitle">夜に競合で悪評発生、朝には患者獲得コンテンツが完成</p>
+      <p class="hero-description">
+          競合の悪評から患者の悩みを検出し、同じ悩みを抱えた人向けのブログ記事・SNS投稿・LINE配信文を自動生成する革新的システム。<br>
+          <strong>まずは競合の弱点を知ることから始めましょう。</strong>
+      </p>
+      <div class="hero-ctas">
+          <a href="#contact" class="cta-primary">無料で分析する</a>
+      </div>
+      <div class="hero-visual">
+          <div class="screen-header">
+              <div class="screen-dots">
+                  <div class="screen-dot dot-red"></div>
+                  <div class="screen-dot dot-yellow"></div>
+                  <div class="screen-dot dot-green"></div>
+              </div>
+              <div class="screen-title">地域No.1クラウド - 将来の自動化システム</div>
+          </div>
+          <div class="flow-container">
+                  <div class="flow-step completed">
+                      <div class="step-time">🌙 昨夜22:00</div>
+                      <div class="step-content">
+                          <div class="step-title">競合悪評を検出</div>
+                          <div class="step-detail">【競合クリニック】★★☆☆☆<br>「脂肪を取りすぎて5年後にしわしわになった」</div>
+                      </div>
+                      <div class="step-arrow">↓</div>
+                  </div>
+                  
+                  <div class="flow-step completed">
+                      <div class="step-time">🧠 深夜02:00</div>
+                      <div class="step-content">
+                          <div class="step-title">患者の悩み分析完了</div>
+                          <div class="step-detail">AI分析結果：「脂肪除去への不安」を検出</div>
+                      </div>
+                      <div class="step-arrow">↓</div>
+                  </div>
+                  
+                  <div class="flow-step completed">
+                      <div class="step-time">☀️ 今朝06:00</div>
+                      <div class="step-content">
+                          <div class="step-title">コンテンツ自動生成完了</div>
+                          <div class="content-grid">
+                              <div class="content-item">
+                                  <div class="content-icon">📝</div>
+                                  <div class="content-text">
+                                      <strong>ブログ記事:</strong><br>
+                                      「脂肪除去で迷っているあなたへ - 後悔しない判断基準とは」
+                                  </div>
+                              </div>
+                              <div class="content-item">
+                                  <div class="content-icon">📱</div>
+                                  <div class="content-text">
+                                      <strong>SNS投稿:</strong><br>
+                                      「脂肪除去への不安をお持ちの方へ。当院では十分なカウンセリングで...」
+                                  </div>
+                              </div>
+                              <div class="content-item">
+                                  <div class="content-icon">📧</div>
+                                  <div class="content-text">
+                                      <strong>LINE配信:</strong><br>
+                                      「脂肪除去を検討中の患者様へ 失敗しないクリニック選びのポイント」
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="step-arrow">↓</div>
+                  </div>
+                  
+                  <div class="flow-step active">
+                      <div class="step-time">📱 今朝07:00</div>
+                      <div class="step-content">
+                          <div class="step-title">院長に通知完了</div>
+                          <div class="step-detail">「おはようございます！患者獲得コンテンツの準備が完了しました」</div>
+                      </div>
+                  </div>
+              </div>
+      </div>
+  </div>
+</section>
+
+<!-- 機能セクション -->
+<section class="section features">
+  <div class="container">
+      <div class="section-header">
+          <h2 class="section-title">夜の悪評が、朝の武器になる</h2>
+          <p class="section-subtitle">
+              競合の悪評データ→患者の悩み検出→翌朝には同じ悩みの人向けコンテンツが完成
+          </p>
+      </div>
+
+      <div class="features-grid">
+          <div class="feature-card">
+              <div class="feature-icon">🌙</div>
+              <h3>夜：悪評データ取得</h3>
+              <p>競合クリニックで「脂肪を取りすぎて後悔」「痛すぎた」「効果が感じられない」などの悪い口コミが投稿されると、AIが自動で検出します。</p>
+          </div>
+
+          <div class="feature-card">
+              <div class="feature-icon">🧠</div>
+              <h3>深夜：患者の悩み分析</h3>
+              <p>「脂肪除去への不安」「痛みへの恐怖」「効果への疑問」など、悪評を書くに至った根本的な悩みをAIが深く分析し、患者心理を読み解きます。</p>
+          </div>
+
+          <div class="feature-card">
+              <div class="feature-icon">☀️</div>
+              <h3>朝：コンテンツ自動完成</h3>
+              <p>同じ悩みを抱えた患者向けの「脂肪除去で後悔しないための3つのポイント」などのブログ記事、SNS投稿、LINE配信文が朝には完成しています。</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- デモセクション -->
+<section class="section demo-section">
+  <div class="container">
+      <div class="demo-container">
+          <div class="demo-content">
+              <h2>競合分析で,
+                <br>患者獲得を自動化</h2>
+              <p>昨夜22時、競合で「脂肪を取りすぎて5年後にしわしわになった」という悪評が投稿されました。AIが患者の根本的な悩み「脂肪除去への不安」を検出し、同じ悩みを持つ人向けのコンテンツを自動生成。</p>
+              
+              <ul class="feature-list">
+                  <li>昨夜22:00「脂肪除去で後悔」悪評を検出</li>
+                  <li>深夜02:00 患者の根本的悩み「脂肪除去への不安」を分析</li>
+                  <li>今朝06:00 同じ悩みの人向けコンテンツ3種類が完成</li>
+                  <li>今朝07:00 院長のスマホに「準備完了」通知が届く</li>
+              </ul>
+          </div>
+
+          <div class="demo-visual">
+              <div class="screen-header">
+                  <div class="screen-dots">
+                      <div class="screen-dot dot-red"></div>
+                      <div class="screen-dot dot-yellow"></div>
+                      <div class="screen-dot dot-green"></div>
+                  </div>
+                  <div class="screen-title">将来の自動処理フロー（開発中）</div>
+              </div>
+              <div class="screen-content">🚨 昨夜22:00 競合悪評を検出
+
+【競合クリニック】★★☆☆☆
+「脂肪を取りすぎて5年後にしわしわになった」
+
+🧠 深夜02:00 患者の悩み分析完了
+→「脂肪除去への不安」を検出
+
+━━━━━━━━━━━━━━━━━━━━
+
+🌅 今朝06:00 コンテンツ自動生成完了！
+
+📝 ブログ記事:
+「脂肪除去で迷っているあなたへ - 
+後悔しない判断基準とは」
+
+📱 SNS投稿:
+「脂肪除去への不安をお持ちの方へ。
+当院では十分なカウンセリングで...」
+
+📧 LINE配信:
+「脂肪除去を検討中の患者様へ
+失敗しないクリニック選びのポイント」
+
+━━━━━━━━━━━━━━━━━━━━
+※現在はこの機能を手動で提供中</div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- フォームセクション -->
+<section class="form-section" id="contact">
+  <div class="container">
+      <div class="section-header">
+          <h2 class="section-title">無料競合分析レポートを受け取る</h2>
+          <p class="section-subtitle">
+              あなたの地域の競合クリニックの弱点を48時間以内に分析してお送りします
+          </p>
+      </div>
+
+      <div class="form-container">
+          <div style="background: #f5f5f7; padding: 24px; border-radius: 12px; margin-bottom: 32px;">
+              <h3 style="color: #1d1d1f; font-size: 20px; font-weight: 600; margin-bottom: 16px;">📊 レポートに含まれる内容</h3>
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="display: flex; align-items: center; margin-bottom: 8px; color: #1d1d1f;">
+                      <span style="color: #30d158; margin-right: 8px;">✓</span>
+                      競合5院の口コミ分析（星評価・悪評の傾向）
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 8px; color: #1d1d1f;">
+                      <span style="color: #30d158; margin-right: 8px;">✓</span>
+                      料金比較表（主要施術の価格差）
+                  </li>
+                  <li style="display: flex; align-items: center; margin-bottom: 8px; color: #1d1d1f;">
+                      <span style="color: #30d158; margin-right: 8px;">✓</span>
+                      競合の弱点を突く具体的な攻略法
+                  </li>
+                  <li style="display: flex; align-items: center; color: #1d1d1f;">
+                      <span style="color: #30d158; margin-right: 8px;">✓</span>
+                      今月すぐに使える患者獲得キャッチコピー
+                  </li>
+              </ul>
+          </div>
+
+          <form action="https://try.ishot.jp/r/edM2CaND6kbG/store" method="post">
+              <div class="form-group">
+                  <label for="mail">メールアドレス <span class="badge">必須</span></label>
+                  <input class="form-control" required="" id="mail" type="email" name="mail" value="" autocomplete="email" placeholder="example@clinic.com">
+              </div>
+              
+              <div class="form-group">
+                  <label for="free5">クリニック名 <span class="badge">必須</span></label>
+                  <input class="form-control" required="" id="free5" type="text" name="free5" value="" placeholder="○○美容クリニック">
+              </div>
+              
+              <div class="form-group">
+                  <label for="free6">お名前 <span class="badge">必須</span></label>
+                  <input class="form-control" required="" id="free6" type="text" name="free6" value="" placeholder="山田太郎">
+              </div>
+          
+              <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+                  <p style="margin: 0; color: #856404; font-size: 15px; line-height: 1.4;">
+                      <strong>⚡ 48時間以内にお送りします</strong><br>
+                      入力いただいた情報をもとに、競合クリニックの口コミ分析・料金比較・攻略法をまとめたレポートを作成し、メールでお送りします。
+                  </p>
+              </div>
+          
+              <button class="btn" type="submit">無料で分析する</button>
+          </form>
+      </div>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer class="footer">
+  <div class="container">
+      <div class="footer-links">
+          <a href="terms/" class="footer-link">利用規約</a>
+          <a href="privacy-policy/" class="footer-link">プライバシーポリシー</a>
+          <a href="commercial-transaction-act/" class="footer-link">特定商取引法に基づく表記</a>
+          <a href="disclaimer/" class="footer-link">免責事項</a>
+      </div>
+      <p class="footer-copyright">© 2025 株式会社i-SHOT. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
